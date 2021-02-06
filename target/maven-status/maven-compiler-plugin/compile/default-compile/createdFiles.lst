@@ -1,5 +1,9 @@
 com\reto2\dataproductv1\DataProductV1Application.class
-com\reto2\dataproductv1\controller\ProductController.class
-com\reto2\dataproductv1\repository\entity\key\ProductEntityKey.class
+com\reto2\dataproductv1\repository\entity\CustomerProductEntity.class
 com\reto2\dataproductv1\repository\ProductRepository.class
 com\reto2\dataproductv1\repository\entity\ProductEntity.class
+com\reto2\dataproductv1\repository\CustomerProductRepository.class
+com\reto2\dataproductv1\controller\ProductController.class
+com\reto2\dataproductv1\controller\CustomerProductController.class
+com\reto2\dataproductv1\repository\entity\key\CustomerProductEntityKey.class
+com\reto2\dataproductv1\repository\entity\key\ProductEntityKey.class

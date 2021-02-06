@@ -2,4 +2,8 @@ C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-
 C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\controller\ProductController.java
 C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\repository\entity\key\ProductEntityKey.java
 C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\repository\ProductRepository.java
+C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\controller\CustomerProductController.java
+C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\repository\entity\CustomerProductEntity.java
 C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\DataProductV1Application.java
+C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\repository\CustomerProductRepository.java
+C:\home\bcp\bootcamp\repo-reto2\05.implementation\backend\data-api\data-product-v1\src\main\java\com\reto2\dataproductv1\repository\entity\key\CustomerProductEntityKey.java

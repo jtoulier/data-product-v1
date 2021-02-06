@@ -11,10 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(schema = "product", name = "product")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(schema = "product", name = "product")
 public class ProductEntity {
     @Embedded
     @Id
