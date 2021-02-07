@@ -1,9 +1,13 @@
 package com.reto2.dataproductv1.controller;
 
+import com.reto2.dataproductv1.dto.response.ProductResponse;
 import com.reto2.dataproductv1.repository.ProductRepository;
 import com.reto2.dataproductv1.repository.entity.ProductEntity;
 import com.reto2.dataproductv1.repository.entity.key.ProductEntityKey;
+import com.reto2.dataproductv1.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,20 +20,17 @@ import java.util.Optional;
 @RequestMapping("/data-product-v1")
 public class ProductController {
     @Autowired
-    private ProductRepository productRepository;
+    private ProductService productService;
 
     @GetMapping("/product")
-    public List<ProductEntity> findAll() {
-        return productRepository.findAll();
+    public ResponseEntity<List<ProductResponse>> findAll() {
+        return new ResponseEntity(productService.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/product/{tio-aux}")
-    public Optional<ProductEntity> findByTioAux(
+    public ResponseEntity<ProductResponse> findByTioAux(
         @PathVariable("tio-aux") String tioAux
     ) {
-        ProductEntityKey productEntityKey = new ProductEntityKey();
-        productEntityKey.setTioAux(tioAux);
-
-        return productRepository.findById(productEntityKey);
+        return new ResponseEntity(productService.findByTioAux(tioAux), HttpStatus.OK);
     }
 }
